@@ -3,31 +3,31 @@ import { BiShoppingBag } from "react-icons/bi";
 
 function Brands() {
   return (
-    <div className="w-10/12 mx-auto py-[80px]">
+    <div className="w-11/12 md:w-10/12 mx-auto py-[80px]">
       <div className=" flex flex-col gap-3 justify-center !text-center ">
         <h2 className="text-4xl font-bold">Our 700+ top brands</h2>
         <span className="text-primary underline font-semibold">
           Shop all of our top brands
         </span>
-        <div className="columns-6 pt-3">
-          <img className="h-[100px]" src="/Images/brands/1.png" />
-          <img className="h-[100px]" src="/Images/brands/7.png" />
-          <img className="h-[100px]" src="/Images/brands/2.png" />
-          <img className="h-[100px]" src="/Images/brands/4.png" />
-          <img className="h-[100px]" src="/Images/brands/5.png" />
-          <img className="h-[100px]" src="/Images/brands/6.png" />
-          <img className="h-[100px]" src="/Images/brands/8.png" />
-          <img className="h-[100px]" src="/Images/brands/3.png" />
-          <img className="h-[100px]" src="/Images/brands/9.png" />
-          <img className="h-[100px]" src="/Images/brands/10.png" />
-          <img className="h-[100px]" src="/Images/brands/11.png" />
-          <img className="h-[100px]" src="/Images/brands/12.png" />
-          <img className="h-[100px]" src="/Images/brands/13.png" />
-          <img className="h-[100px]" src="/Images/brands/14.png" />
-          <img className="h-[100px]" src="/Images/brands/15.png" />
-          <img className="h-[100px]" src="/Images/brands/16.png" />
-          <img className="h-[100px]" src="/Images/brands/17.png" />
-          <img className="h-[100px]" src="/Images/brands/18.png" />
+        <div className="columns-2 md:columns-3 lg:columns-6 pt-3">
+          <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/1.png" />
+          <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/7.png" />
+          <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/2.png" />
+          <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/4.png" />
+          <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/5.png" />
+          <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/6.png" />
+          <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/8.png" />
+          <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/3.png" />
+          <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/9.png" />
+          <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/10.png" />
+          <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/11.png" />
+          <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/12.png" />
+          <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/13.png" />
+          <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/14.png" />
+          <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/15.png" />
+          <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/16.png" />
+          <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/17.png" />
+          <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/18.png" />
         </div>
       </div>
       <div className="flex flex-row gap-4 pt-[80px]">

@@ -3,29 +3,22 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-function slider() {
+function slider({children}) {
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
+
 
   };
   return (
     <div className="h-fit">
       <Slider {...settings}>
-        <div>
-          <img src="/Images/slider1.jpg" className="w-full h-[450px] object-cover"/>
-        </div>
-        <div>
-          <img src="/Images/slider1.jpg" className="w-full h-[450px] object-cover"/>
-        </div>
-        <div>
-        <img src="/Images/slider1.jpg" className="w-full h-[450px] object-cover"/>
-        </div>
+        {children}
       </Slider>
     </div>
   );
