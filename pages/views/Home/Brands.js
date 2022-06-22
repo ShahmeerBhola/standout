@@ -3,13 +3,13 @@ import { BiShoppingBag } from "react-icons/bi";
 
 function Brands() {
   return (
-    <div className="w-11/12 md:w-10/12 mx-auto py-[80px]">
+    <div className="w-11/12 md:w-10/12 mx-auto py-[80px] overflow-hidden">
       <div className=" flex flex-col gap-3 justify-center !text-center ">
         <h2 className="text-4xl font-bold">Our 700+ top brands</h2>
         <span className="text-primary underline font-semibold">
           Shop all of our top brands
         </span>
-        <div className="columns-2 md:columns-3 lg:columns-6 pt-3">
+        <div className="grid-cols-2 md:grid-cols-4 grid  lg:grid-cols-6 pt-3">
           <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/1.png" />
           <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/7.png" />
           <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/2.png" />
@@ -30,8 +30,8 @@ function Brands() {
           <img className="md:h-[80px] w-[80%] lg:h-[100px]" src="/Images/brands/18.png" />
         </div>
       </div>
-      <div className="flex flex-row gap-4 pt-[80px]">
-        <div className="flex flex-col w-1/2 gap-4">
+      <div className="flex flex-col mmd:flex-row gap-4 pt-[80px]">
+        <div className="flex flex-col w-full mmd:w-1/2 gap-4">
           <div className=" flex items-end py-[70px] px-[30px] group marine h-[250px] bg-cover bg-center bg-no-repeat w-full">
             <div className=" transition-all  !duration-300 left-[40px] bottom-[50px]">
               <h2 className="text-5xl font-bold text-white">Marine</h2>
@@ -62,7 +62,7 @@ function Brands() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-1/2 gap-4">
+        <div className="flex flex-col w-full mmd:w-1/2 gap-4">
           <div className=" relative group w-full water h-[516px] bg-cover bg-center bg-no-repeat ">
             <div className="absolute  transition-all  !duration-300 left-[40px] bottom-[50px]">
               <h2 className="text-5xl font-bold text-white">

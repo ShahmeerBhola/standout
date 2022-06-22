@@ -8,7 +8,7 @@ import styles from '../../styles/Home.module.css'
 
 function Products() {
   return (
-    <div className="bg-light  py-[65px] ">
+    <div className="bg-light  py-[65px] overflow-hidden ">
       <div className="w-10/12 mx-auto">
         <div className=" flex flex-col gap-3 justify-center !text-center ">
           <h2 className="text-4xl font-bold">Latest Products</h2>
