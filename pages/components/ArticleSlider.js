@@ -11,7 +11,7 @@ function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
         <button
-        className='slide-arrow prev-arrow absolute border-2 -right-[44px] w-[40px] h-[40px]  md:-right-[72px] top-[165px] md:top-[150px] text-2xl rounded-full text-center md:w-[50px] md:h-[50px] '
+        className='slide-arrow next-arrow absolute border-2 -right-[44px] w-[40px] h-[40px]  md:!-right-[60px] top-[165px] md:top-[150px] text-2xl rounded-full text-center md:w-[50px] md:h-[50px] '
         onClick={onClick}
       ><HiOutlineArrowRight className="text-center w-11/12 mx-auto text-[#18172066]"/></button>
     );
@@ -55,7 +55,7 @@ function ArticleSlider({children,type}) {
             }
         },
         {
-            breakpoint: 650,
+            breakpoint: 550,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1

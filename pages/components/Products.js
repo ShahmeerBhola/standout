@@ -20,7 +20,9 @@ function Products() {
         {/* <div className="flex flex-row  pt-[50px] gap-3 w-10/12 mx-auto"> */}
           <CardSlider type="4">
               {/* Product1 */}
-          <div className="hover:bg-white flex group  flex-col p-3 gap-3 mx-2  w-1/4 border rounded-md relative overflow-hidden">
+    {/* className={`${styles["slick-slide"]}`} */}
+
+          <div className="hover:bg-white flex group  flex-col p-3   md:!w-[95%] !w-[97%] border rounded-md relative overflow-hidden">
             <AiOutlineStar className="absolute right-4 text-[#eccb1d] text-lg" />
             <div className="absolute flex items-end -top-[20px] -left-[40px] pb-[7px] justify-center  w-[100px] h-[57px] text-center -rotate-45 text-white text-xs bg-primary font-bold">
               New
@@ -44,7 +46,7 @@ function Products() {
             </div>
           </div>
           {/* Product2 */}
-          <div className="hover:bg-white flex group  flex-col  mx-2   p-3 gap-5  w-1/4 border rounded-md relative overflow-hidden">
+          <div className="hover:bg-white flex group  flex-col p-3 md:!w-[95%] !w-[97%] border rounded-md relative overflow-hidden">
             <AiOutlineStar className="absolute right-4 text-[#eccb1d] text-lg" />
             <div className="absolute flex items-end -top-[20px] -left-[40px] pb-[7px] justify-center  w-[100px] h-[57px] text-center -rotate-45 text-white text-xs bg-[#198c29] font-bold">
               Sale
@@ -68,7 +70,7 @@ function Products() {
             </div>
           </div>
           {/* Product 3 */}
-          <div className="hover:bg-white flex group   mx-2 flex-col p-3 gap-5  w-1/4 border rounded-md relative overflow-hidden">
+          <div className="hover:bg-white flex group   flex-col p-3 md:!w-[95%] !w-[97%] border rounded-md relative overflow-hidden">
             <AiOutlineStar className="absolute right-4 text-[#eccb1d] text-lg" />
             <div className="absolute flex items-end -top-[20px] -left-[40px] pb-[7px] justify-center  w-[100px] h-[57px] text-center -rotate-45 text-white text-[10px] bg-[#f12222] font-bold">
               20% OFF
@@ -92,7 +94,7 @@ function Products() {
             </div>
           </div>
           {/* Product4 */}
-          <div className="hover:bg-white flex group   mx-2  flex-col p-3 gap-5  w-1/4 border rounded-md relative overflow-hidden">
+          <div className="hover:bg-white flex group    flex-col p-3 md:!w-[95%] !w-[97%] border rounded-md relative overflow-hidden">
             <AiOutlineStar className="absolute right-4 text-[#eccb1d] text-lg" />
             <div className="absolute flex items-end -top-[20px] -left-[40px] pb-[7px] justify-center  w-[100px] h-[57px] text-center -rotate-45 text-white text-xs bg-[#aeaeae] font-bold">
               Sold
@@ -116,7 +118,7 @@ function Products() {
             </div>
           </div>
           {/* Product5 */}
-          <div className="hover:bg-white flex group  mx-2 flex-col p-3 gap-5  w-1/4 border rounded-md relative overflow-hidden">
+          <div className="hover:bg-white flex group  flex-col md:!w-[95%] !w-[97%] p-3 border rounded-md relative overflow-hidden" >
             <AiOutlineStar className="absolute right-4 text-[#eccb1d] text-lg" />
             <div className="absolute flex items-end -top-[20px] -left-[40px] pb-[7px] justify-center  w-[100px] h-[57px] text-center -rotate-45 text-white text-[10px] bg-[#f12222] font-bold">
               20% OFF

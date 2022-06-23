@@ -17,7 +17,7 @@ function Article() {
         {/* <div className="flex flex-row justify-start pt-[50px] gap-4 w-11/12 mx-auto"> */}
         <ArticleSlider type="3">
            {/* Product1 */}
-           <div className=" flex  flex-col p-4 bg-white  gap-3  w-[400px] border rounded-xl relative overflow-hidden">
+           <div className=" flex  flex-col p-4 bg-white  gap-3  !w-full md:!w-[95%]  border rounded-xl relative overflow-hidden">
             <img className="h-[160px] w-full " src="/Images/news2.png"/>
             <div className="flex flex-col pt-2 gap-2  items-start  ">
               <h2 className="text-base font-bold">Significant all-round Speed</h2>
@@ -33,7 +33,7 @@ function Article() {
             </div>
           </div>
           {/* Product2 */}
-          <div className=" flex  flex-col p-4 bg-white  gap-3  w-[400px] border rounded-xl relative overflow-hidden">
+          <div className=" flex  flex-col p-4 bg-white  gap-3  !w-full md:!w-[95%]  border rounded-xl relative overflow-hidden">
             <img className="h-[160px] w-full " src="/Images/news3.png"/>
             <div className="flex flex-col pt-2 gap-2  items-start  ">
               <h2 className="text-base font-bold">Significant all-round Speed</h2>
@@ -49,7 +49,7 @@ function Article() {
             </div>
           </div>
           {/* Product 3 */}
-           <div className=" flex  flex-col p-4 bg-white  gap-3  w-[400px] border rounded-xl relative overflow-hidden">
+           <div className=" flex  flex-col p-4 bg-white  gap-3  !w-full md:!w-[95%]  border rounded-xl relative overflow-hidden">
             <img className="h-[160px] w-full " src="/Images/news2.png"/>
             <div className="flex flex-col pt-2 gap-2  items-start  ">
               <h2 className="text-base font-bold">Significant all-round Speed</h2>
@@ -65,7 +65,7 @@ function Article() {
             </div>
           </div>
              {/* Product4 */}
-             <div className=" flex  flex-col p-4 bg-white  gap-3  w-[400px] border rounded-xl relative overflow-hidden">
+             <div className=" flex  flex-col p-4 bg-white  gap-3  !w-full md:!w-[95%]  border rounded-xl relative overflow-hidden">
             <img className="h-[160px] w-full " src="/Images/news3.png"/>
             <div className="flex flex-col pt-2 gap-2  items-start  ">
               <h2 className="text-base font-bold">Significant all-round Speed</h2>
