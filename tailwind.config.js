@@ -17,7 +17,7 @@ module.exports = {
       },
       display: ["group-hover"],  
       transform:['group1-hover'],
-      visibility:['target-hover'],
+      opacity:['target-opacity'],
       screens: {
         'sm': '340px',
         // => @media (min-width: 640px) { ... }
@@ -36,6 +36,13 @@ module.exports = {
         // => @media (min-width: 1536px) { ... }
       },
 
+    },
+   
+  },
+  variants: {
+    extend: {
+      // ...
+      visibility:['target-hover'],
     },
   },
   plugins: [],
