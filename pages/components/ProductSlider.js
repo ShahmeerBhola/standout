@@ -58,7 +58,7 @@ export default function ProductSlider() {
         {
             breakpoint: 550,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 1
             }
         }
@@ -71,7 +71,7 @@ export default function ProductSlider() {
 
     return (
       <>
- <div className='  lg:!w-[90px]  ' > 
+ <div className='lg:block hidden  lg:!w-[90px]  ' > 
  <Slider 
       {...settings}
         asNavFor={nav1}
@@ -82,14 +82,14 @@ export default function ProductSlider() {
       >
         {
             images.map((items,index)=>(
-                <div className='!h-[80px] active:border-primary  !w-[86px] !flex mb-3  !gap-3 !justify-center !items-center border rounded-lg ' key={items.id}>
+                <div className='!h-[80px] active:border-primary   !w-[86px] !flex mb-3  !gap-3 !justify-center !items-center border rounded-lg ' key={items.id}>
                     <img className='!h-fit' src={items.img} />
                 </div>
             ))
         }
       </Slider>
  </div>
-      <div className=' !h-[450px]  ml-3  lg:w-[330px] xl:w-[450px] border-2 rounded-lg'>
+      <div className='lg:block hidden  !h-[450px]  ml-3  lg:w-[330px] xl:w-[450px] border-2 rounded-lg'>
       <Slider {...settings1}  asNavFor={nav2} ref={(slider1) => setNav1(slider1)}>
       {
             images.map((items,index)=>(
@@ -100,6 +100,37 @@ export default function ProductSlider() {
         }
       </Slider>
       </div>
+      {/* responsive*/}
+
+      <div className=' !h-[450px] mb-10 ml-3 block lg:hidden lg:w-[330px] xl:w-[450px] border-2 rounded-lg'>
+      <Slider {...settings1}  asNavFor={nav2} ref={(slider1) => setNav1(slider1)}>
+      {
+            images.map((items,index)=>(
+                <div className='!flex h-[450px] justify-center items-center text-center' key={items.id}>
+                    <img className=' w-[394px] ' src={items.img} />
+                </div>
+            ))
+        }
+      </Slider>
+      </div>
+      <div className='  !w-full block   lg:hidden   ' > 
+ <Slider 
+      {...settings}
+        asNavFor={nav1}
+        ref={(slider2) => setNav2(slider2)}
+        slidesToShow={6}
+        swipeToSlide={true}
+        focusOnSelect={true}
+      >
+        {
+            images.map((items,index)=>(
+                <div className='!h-[80px] active:border-primary mx-auto  !w-[86px] !flex mb-3  !gap-3 !justify-center !items-center !text-center border rounded-lg ' key={items.id}>
+                    <img className='!h-fit' src={items.img} />
+                </div>
+            ))
+        }
+      </Slider>
+ </div>
       </>
       
 
