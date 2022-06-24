@@ -11,7 +11,7 @@ import {
 import { GiHamburgerMenu } from "react-icons/gi";
 import Slider from "./slider";
 
-function header() {
+function Header() {
   const cartItem=[
     {
       id:'1',
@@ -181,10 +181,11 @@ function header() {
               {brand && (
                 <div className="  mt-1.5 overflow-y-auto h-[380px]  z-10 px-3 py-[20px] w-full bg-white md:w-10/12 mmd:w-full mx-auto inset-x-0 ">
                   <div className="grid grid-cols-2 md:grid-cols-3 mmd:grid-cols-2 grid-flow-row gap-4  ">
+                    <Link href="/">
                     <img
-                      className="h-[80px] mb-2 w-full"
+                      className="cursor-pointer h-[80px] mb-2 w-full"
                       src="/Images/brands/1.png"
-                    />
+                    /></Link>
                     <img
                       className="h-[80px] my-2 w-full"
                       src="/Images/brands/7.png"
@@ -521,7 +522,9 @@ function header() {
       <hr />
       <div className="hidden lg:block">
         <div className="w-10/12 flex mx-auto justify-between py-3 items-center">
-          <img src="/Images/logo-dark.svg" className="w-[185px] h-[50px]" />
+        <Link href="/">
+          <img src="/Images/logo-dark.svg" className="w-[185px] cursor-pointer h-[50px]" />
+          </Link>
           <div className="flex gap-5">
             <div className="relative flex items-center">
               <input
@@ -548,22 +551,26 @@ function header() {
           </div>
         </div>
         <hr />
-        <ul className="w-10/12 text-md font-semibold whitespace-nowrap justify-around flex py-2 items-center mx-auto">
-          <li className="p-2 hover:bg-primary rounded-md  hover:text-white cursor-pointer">
+        <ul className="w-10/12 text-md font-semibold whitespace-nowrap justify-around flex items-center mx-auto">
+          
+          <Link href="/">
+          <li className="p-2 hover:bg-primary rounded-md my-2  hover:text-white cursor-pointer">
             <BiHome fontSize="16px " />
           </li>
-          <div className="group hover:bg-primary rounded-md  hover:text-white cursor-pointer">
-            <li className="flex relative py-1.5 px-5 border hover:border-0  border-y-0 items-center gap-2  ">
+          </Link>
+          <div className="group ">
+            <li className="flex hover:bg-primary rounded-md my-2  hover:text-white cursor-pointer relative py-1.5 px-5 border hover:border-0  border-y-0 items-center gap-2  ">
               <p>Brands</p>
               <AiFillCaretDown fontSize="12px" />
             </li>
-            <div className="absolute group-hover:block hidden mt-1.5  z-10 px-10 rounded-b-[20px] py-[60px] bg-white w-10/12 mx-auto border-x-0 border-b-0 border-t-2 inset-x-0 ">
+            <div className="absolute group-hover:block hidden    z-10 px-10 rounded-b-[20px] py-[60px] bg-white w-11/12 xl:w-10/12 mx-auto border-x-0 border-b-0 border-t-2 inset-x-0 ">
               <div className="columns-6 gap-4  ">
-               
+              <Link href="/ProductCategory/brandDetails">
                <img 
-                  className="h-[80px] mb-2 w-10/12"
+                  className="cursor-pointer h-[80px] mb-2 w-10/12"
                   src="/Images/brands/1.png"
                 />
+                </Link>
                 <img
                   className="h-[80px] my-2 w-10/12"
                   src="/Images/brands/7.png"
@@ -636,16 +643,16 @@ function header() {
             </div>
           </div>
 
-          <li className="hover:bg-primary rounded-md  hover:text-white cursor-pointer flex py-1.5 px-5 items-center gap-2 ">
+          <li className="hover:bg-primary rounded-md my-2  hover:text-white cursor-pointer flex py-1.5 px-5 items-center gap-2 ">
             <p>Marine</p>
             <AiFillCaretDown fontSize="12px" />
           </li>
-          <div className="group">
-            <li className="hover:bg-primary  hover:rounded-md  hover:text-white cursor-pointer flex py-1.5 px-5 border  border-y-0 items-center gap-2 ">
+          <div className="group ">
+            <li className="hover:bg-primary my-2  hover:rounded-md  hover:text-white cursor-pointer flex py-1.5 px-5 border  border-y-0 items-center gap-2 ">
               <p>Fishing</p>
               <AiFillCaretDown fontSize="12px" />
             </li>
-            <div className="absolute group-hover:block hidden shadow-lg  mt-1.5  z-10 pl-15  px-10 rounded-b-[20px] py-[30px] bg-white w-10/12 mx-auto border-x-0 border-b-0 border-t-2 inset-x-0 ">
+            <div className="absolute group-hover:block hidden  shadow-lg  z-10 pl-15  px-10 rounded-b-[20px] py-[30px] bg-white w-10/12 mx-auto border-x-0 border-b-0 border-t-2 inset-x-0 ">
               <div className="flex flex-row flex-wrap  gap-10">
                 {/* text1 */}
                 <div className="flex flex-col pl-5 gap-3 w-[22%] ">
@@ -776,19 +783,19 @@ function header() {
               </div>
             </div>
           </div>
-          <li className="hover:bg-primary hover:rounded-md  hover:text-white cursor-pointer flex py-1.5 px-5 items-center gap-2 whitespace-nowrap ">
+          <li className="hover:bg-primary my-2 hover:rounded-md  hover:text-white cursor-pointer flex py-1.5 px-5 items-center gap-2 whitespace-nowrap ">
             <p>Diving & Spearfishing</p>
             <AiFillCaretDown fontSize="12px" />
           </li>
-          <li className="hover:bg-primary  hover:rounded-md  hover:text-white cursor-pointer flex py-1.5 px-5 border  border-y-0 items-center gap-2 ">
+          <li className="hover:bg-primary my-2 hover:rounded-md  hover:text-white cursor-pointer flex py-1.5 px-5 border  border-y-0 items-center gap-2 ">
             <p>Apparel</p>
             <AiFillCaretDown fontSize="12px" />
           </li>
-          <li className="hover:bg-primary  hover:rounded-md  hover:text-white cursor-pointer flex py-1.5 px-5 items-center gap-2 ">
+          <li className="hover:bg-primary my-2  hover:rounded-md  hover:text-white cursor-pointer flex py-1.5 px-5 items-center gap-2 ">
             <p>Water sports</p>
             <AiFillCaretDown fontSize="12px" />
           </li>
-          <li className="hover:bg-primary  hover:rounded-md  hover:text-white cursor-pointer flex py-1.5 px-5 items-center border border-r-0 border-y-0 gap-2 ">
+          <li className="hover:bg-primary my-2 hover:rounded-md  hover:text-white cursor-pointer flex py-1.5 px-5 items-center border border-r-0 border-y-0 gap-2 ">
             <p>Camping</p>
             <AiFillCaretDown fontSize="12px" />
           </li>
@@ -796,10 +803,11 @@ function header() {
       </div>
       {/* responsive menu */}
       <div className="w-11/12 md:w-10/12 flex lg:hidden mx-auto justify-between py-4 items-center">
+        <Link href='/'>
         <img
           src="/Images/logo-dark.svg"
           className="w-[145px] md:w-[155px] h-[35px] md:h-[50px]"
-        />
+        /></Link>
         <div className="flex gap-2">
           <div className=" flex justify-center items-center w-[55px] h-[45px] bg-[#f3f3f3] outline-none border-none py-2 rounded-md">
             <BiSearchAlt2 fontSize="22px" className=" text-primary" />
@@ -867,4 +875,4 @@ function header() {
   );
 }
 
-export default header;
+export default Header;

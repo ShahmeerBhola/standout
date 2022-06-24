@@ -1,12 +1,13 @@
-import Home from './views/Home/index'
-import ProductCategory from './views/ProductCategory/index'
+import ProductSlider from './components/ProductSlider'
+import Home from './Home/home'
+import Details from './Product/Details'
 
 export default function index() {
   return (
     <>
-    <Home/>
-    {/* <ProductCategory/> */}
-    
+    {/* <Home/> */}
+    {/* <ProductSlider/>     */}
+    <Details/>
 
     </>
   )

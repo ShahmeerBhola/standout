@@ -1,10 +1,150 @@
-import React from "react";
-import { AiOutlineHeart, AiOutlineStar,AiOutlineLeft,AiOutlineRight,AiOutlineDown } from "react-icons/ai";
-import { BiShoppingBag } from "react-icons/bi";
-
+import React, { useState } from "react";
+import {
+  AiOutlineHeart,
+  AiOutlineStar,
+  AiOutlineLeft,
+  AiOutlineRight,
+  AiOutlineDown,
+} from "react-icons/ai";
+import { BiShoppingBag,BiX } from "react-icons/bi";
+import {BsGrid} from "react-icons/bs";
 function Brand() {
+  const [toggler, setToggler] = useState(false);
+  const [checkbox,setCheckbox]=useState(true)
+  const [checkbox1,setCheckbox1]=useState(true)
+  const [checkbox2,setCheckbox2]=useState(true)
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full overflow-hidden h-full ">
+  
+      {toggler && (
+        <div
+          className={` card1 menu fixed z-30 overflow-scroll  top-0 left-0 bg-white min-w-[300px] md:w-[350px] shadow-md h-full `}
+          
+        >
+          <div className="flex flex-col ">
+          <div className="w-11/12 mx-auto  flex py-3 items-center justify-between">
+              <h2 className="text-[17px] font-bold show">Category</h2>
+              <BiX
+                onClick={() => setToggler(false)}
+                className="w-[30px] h-[30px] rounded-sm border-[#f12222] border text-center  cursor-pointer  text-md  text-[#f12222] "
+              />
+            </div>
+            <hr />
+          <div className="w-11/12 mx-auto py-6 gap-5 flex flex-col">
+            {/* responsive category */}
+            <div className="flex flex-col border gap-3 rounded-lg py-5 px-3.5">
+              <div className="flex justify-between text-[13px] font-bold ">
+                <h2>Category</h2>
+                <AiOutlineDown className="cursor-pointer" onClick={()=>setCheckbox(!checkbox)} />
+              </div>
+              {checkbox && 
+              <>
+              <input
+                className="bg-[#f3f3f3] outline-none border-none w-full text-[14px] p-2.5"
+                placeholder="Search"
+              />
+              <div className="flex text-[13px] font-bold items-center pl-2 gap-2">
+                <input type="checkbox" />
+                <span>Fishing gear (3)</span>
+              </div>
+              <div className="flex text-[13px] font-bold items-center pl-2 gap-2">
+                <input type="checkbox" />
+                <span> Water sports (5)</span>
+              </div></>}
+            </div>
+                        {/* category2 */}
+                        <div className="flex flex-col border gap-3 rounded-lg py-5 px-3.5">
+              <div className="flex justify-between text-[13px] font-bold ">
+                <h2>Size</h2>
+                <AiOutlineDown className="cursor-pointer" onClick={()=>setCheckbox1(!checkbox1)} />
+
+              </div>
+              {
+                checkbox1 && 
+                <>
+                              <input
+                className="bg-[#f3f3f3] outline-none border-none w-full text-[14px] p-2.5"
+                placeholder="Search"
+              />
+              <div className="flex text-[13px] font-bold items-center pl-2 gap-2">
+                <input type="checkbox" />
+                <span>S (3)</span>
+              </div>
+              <div className="flex text-[13px] font-bold items-center pl-2 gap-2">
+                <input type="checkbox" />
+                <span> M (5)</span>
+              </div>
+              <div className="flex text-[13px] font-bold items-center pl-2 gap-2">
+                <input type="checkbox" />
+                <span>L (3)</span>
+              </div>
+              <div className="flex text-[13px] font-bold items-center pl-2 gap-2">
+                <input type="checkbox" />
+                <span> XL (5)</span>
+              </div>
+              <div className="flex text-[13px] font-bold items-center pl-2 gap-2">
+                <input type="checkbox" />
+                <span>XXL (3)</span>
+              </div>
+              <div className="flex text-[13px] font-bold items-center pl-2 gap-2">
+                <input type="checkbox" />
+                <span> XXXL (5)</span>
+              </div>
+              <div className="flex text-[13px] font-bold items-center pl-2 gap-2">
+                <input type="checkbox" />
+                <span>2XL (3)</span>
+              </div>
+              <div className="flex text-[13px] font-bold items-center pl-2 gap-2">
+                <input type="checkbox" />
+                <span> 3XL (5)</span>
+              </div>
+                </>
+              }
+
+            </div>
+            {/* category3 */}
+            <div className="flex flex-col border gap-3 rounded-lg py-5 px-3.5">
+              <div className="flex justify-between text-[13px] font-bold ">
+                <h2>Price</h2>
+                <AiOutlineDown className="cursor-pointer" onClick={()=>setCheckbox2(!checkbox2)} />
+
+              </div>
+             {
+              checkbox2 &&
+              <>
+               <input
+                className="bg-[#f3f3f3] outline-none border-none w-full text-[14px] p-2.5"
+                placeholder="Search"
+              />
+              <div className="flex text-[13px] font-bold items-center pl-2 gap-2">
+                <input type="checkbox" />
+                <span> $0 - $20</span>
+              </div>
+              <div className="flex text-[13px] font-bold items-center pl-2 gap-2">
+                <input type="checkbox" />
+                <span> $20 - $50</span>
+              </div>
+              <div className="flex text-[13px] font-bold items-center pl-2 gap-2">
+                <input type="checkbox" />
+                <span> $50 - $100</span>
+              </div>
+              <div className="flex text-[13px] font-bold items-center pl-2 gap-2">
+                <input type="checkbox" />
+                <span> $100 - $150</span>
+              </div>
+              <div className="flex text-[13px] font-bold items-center pl-2 gap-2">
+                <input type="checkbox" />
+                <span> $150 - $300</span>
+              </div>
+              </>
+             }
+            </div>
+            {/* category end */}
+            </div>
+          </div>
+        </div>
+      )}
+
       <hr />
       <div className="w-10/12 mx-auto">
         <div className="flex gap-1 pt-3 text-dark1 font-bold text-sm">
@@ -36,8 +176,7 @@ function Brand() {
             <div className="flex flex-col border gap-3 rounded-lg py-5 px-3.5">
               <div className="flex justify-between text-[13px] font-bold ">
                 <h2>Category</h2>
-                <AiOutlineDown/>
-
+                <AiOutlineDown />
               </div>
               <input
                 className="bg-[#f3f3f3] outline-none border-none w-full text-[14px] p-2.5"
@@ -56,8 +195,7 @@ function Brand() {
             <div className="flex flex-col border gap-3 rounded-lg py-5 px-3.5">
               <div className="flex justify-between text-[13px] font-bold ">
                 <h2>Size</h2>
-                <AiOutlineDown/>
-
+                <AiOutlineDown />
               </div>
               <input
                 className="bg-[#f3f3f3] outline-none border-none w-full text-[14px] p-2.5"
@@ -100,7 +238,7 @@ function Brand() {
             <div className="flex flex-col border gap-3 rounded-lg py-5 px-3.5">
               <div className="flex justify-between text-[13px] font-bold ">
                 <h2>Price</h2>
-                <AiOutlineDown/>
+                <AiOutlineDown />
               </div>
               <input
                 className="bg-[#f3f3f3] outline-none border-none w-full text-[14px] p-2.5"
@@ -129,10 +267,16 @@ function Brand() {
             </div>
           </div>
           <div className="w-full lg:w-3/4 flex flex-col gap-3">
-            <div className="flex gap-1  text-darker font-bold text-[15px]">
+           <div className="flex justify-between items">
+           <div className="flex gap-1 flex-wrap text-darker font-bold text-[15px]">
               <span className="text-primary">Brand / </span>
-              Company Details
+              Company <span>Details</span>
             </div>
+            <div onClick={()=>setToggler(true)} className=" flex  lg:hidden items-center gap-2 bg-[#1817200f] px-2 py-1 h-7 text-sm font-medium cursor-pointer">
+              <BsGrid/>
+              <h2>Category</h2>
+            </div>
+           </div>
             <div className="flex flex-col md:flex-row px-6 gap-2 md:gap-10 py-3 items-center border rounded-md">
               <img className="w-[110px] h-[90px]" src="/Images/brands/1.png" />
               <p className="text-[13px] text-dark1">
@@ -146,7 +290,7 @@ function Brand() {
               {/* Product1 */}
 
               <div className=" flex group bg-white flex-col p-3 gap-5  w-full border rounded-md relative overflow-hidden">
-              <AiOutlineStar className="absolute right-4 text-[#eccb1d] text-lg" />
+                <AiOutlineStar className="absolute right-4 text-[#eccb1d] text-lg" />
 
                 <img
                   className="h-[190px] w-[150px] md:w-3/4 lg:w-2/3 mx-auto pt-[30px]"
@@ -171,7 +315,7 @@ function Brand() {
               </div>
               {/* Product 2 */}
               <div className=" flex group bg-white flex-col p-3 gap-5  w-full border rounded-md relative overflow-hidden">
-              <AiOutlineStar className="absolute right-4 text-[#eccb1d] text-lg" />
+                <AiOutlineStar className="absolute right-4 text-[#eccb1d] text-lg" />
 
                 <img
                   className="h-[190px] w-[150px] md:w-3/4 lg:w-2/3 mx-auto pt-[30px]"
@@ -360,20 +504,22 @@ function Brand() {
               {/* end */}
             </div>
             <div className="flex justify-between ">
-                <h2 className="tet-[13px] font-bold">Showing 1-32 of 34 results</h2>
-                <div className="flex items-center mt-[40px] md:mt-0 gap-2 ">
-                    <div className="p-1 border cursor-pointer bg-primary text-white rounded-sm">
-                        <AiOutlineLeft/>
-                    </div>
-                    <div className="flex gap-3 cursor-pointer ">
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                    </div>
-                    <div className="p-1 bg-primary cursor-pointer  text-white  border rounded-sm">
-                        <AiOutlineRight/>
-                    </div>
+              <h2 className="tet-[13px] font-bold">
+                Showing 1-32 of 34 results
+              </h2>
+              <div className="flex items-center mt-[40px] md:mt-0 gap-2 ">
+                <div className="p-1 border cursor-pointer bg-primary text-white rounded-sm">
+                  <AiOutlineLeft />
                 </div>
+                <div className="flex gap-3 cursor-pointer ">
+                  <span>1</span>
+                  <span>2</span>
+                  <span>3</span>
+                </div>
+                <div className="p-1 bg-primary cursor-pointer  text-white  border rounded-sm">
+                  <AiOutlineRight />
+                </div>
+              </div>
             </div>
           </div>
         </div>

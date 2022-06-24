@@ -1,6 +1,6 @@
 import React from "react";
 import { BiShoppingBag } from "react-icons/bi";
-import Slider from "../../components/slider";
+import Slider from "../components/slider";
 
 
 function Brands() {

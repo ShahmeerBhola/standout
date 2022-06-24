@@ -56,6 +56,30 @@ body {
 .slick-dots li.slick-active{
   background-color: #22a7f1;
 }
+.card1{
+  transition: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  
+}
+.show{
+  transition: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  visibility: hidden;
+  transform: translateX(-45px);
+
+  opacity: 0;
+}
+.card1 .show{
+  transition: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  opacity: 1;
+  transform: translateX(0px);
+  visibility: visible;
+}
+
 
 @media screen and (min-width: 999px ) and (max-width: 2000px ) {
   .card{
@@ -71,6 +95,11 @@ body {
   .group:hover .card{
       opacity: 1;
       visibility: visible;
+  }
+
+  .card1{
+    opacity: 1;
+    visibility: visible;
   }
   .group1{
     transition: all;
